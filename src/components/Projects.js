@@ -1,9 +1,43 @@
-import React from 'react'
-
+import React from "react";
+import project1 from "../assests/project1-tumbnail.png";
+import Project from "./Project";
+import project2 from "../assests/project2-tumbnail.png";
 function Projects() {
   return (
-    <div>Projects</div>
-  )
+    <div className="bg-slate-900 p-5  text-slate-200">
+      <h1 className="text-5xl pb-9 ">selected Projects</h1>
+      <div>
+        <Project
+          img={project1}
+          time="2021-present"
+          address="https://GhazalehNiazi.github.io/restaurant/"
+          number="1/4"
+          name="Restarant app"
+        />
+        <Project
+          img={project2}
+          time="2021-present"
+          address="https://GhazalehNiazi.github.io/weather-app/"
+          number="2/4"
+          name="Restarant app"
+        />
+        <Project
+          img={project1}
+          time="2021-present"
+          address="https://GhazalehNiazi.github.io/restaurant/"
+          number="3/4"
+          name="Restarant app"
+        />
+        <Project
+          img={project2}
+          time="2021-present"
+          address="https://GhazalehNiazi.github.io/weather-app/"
+          number="4/4"
+          name="Restarant app"
+        />
+      </div>
+    </div>
+  );
 }
 
-export default Projects
+export default Projects;
