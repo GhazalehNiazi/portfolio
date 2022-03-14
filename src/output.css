@@ -470,54 +470,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   order: 2;
 }
 
-.order-1 {
-  order: 1;
-}
-
-.m-0\.5 {
-  margin: 0.125rem;
-}
-
-.m-0 {
-  margin: 0px;
-}
-
-.my-0\.5 {
-  margin-top: 0.125rem;
-  margin-bottom: 0.125rem;
-}
-
-.my-0 {
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-.mx-0\.5 {
-  margin-left: 0.125rem;
-  margin-right: 0.125rem;
-}
-
-.mx-0 {
-  margin-left: 0px;
-  margin-right: 0px;
-}
-
 .mx-1 {
   margin-left: 0.25rem;
   margin-right: 0.25rem;
-}
-
-.my-1 {
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
-}
-
-.mb-20 {
-  margin-bottom: 5rem;
-}
-
-.mb-10 {
-  margin-bottom: 2.5rem;
 }
 
 .mb-5 {
@@ -528,85 +483,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: flex;
 }
 
-.h-\[80vw\] {
-  height: 80vw;
-}
-
-.h-\[40vw\] {
-  height: 40vw;
-}
-
-.h-\[30vw\] {
-  height: 30vw;
-}
-
-.h-\[0vw\] {
-  height: 0vw;
-}
-
-.h-\[350vw\] {
-  height: 350vw;
-}
-
-.h-\[35vw\] {
-  height: 35vw;
-}
-
-.h-\[38vw\] {
-  height: 38vw;
-}
-
-.h-\[37vw\] {
-  height: 37vw;
-}
-
-.h-\[3vw\] {
-  height: 3vw;
-}
-
-.h-\[100vh\] {
-  height: 100vh;
-}
-
-.h-\[90vh\] {
-  height: 90vh;
-}
-
-.h-\[900vh\] {
-  height: 900vh;
-}
-
-.h-\[vh\] {
-  height: vh;
-}
-
 .h-\[88vh\] {
   height: 88vh;
-}
-
-.h-4\/5 {
-  height: 80%;
-}
-
-.h-3\/5 {
-  height: 60%;
-}
-
-.h-1 {
-  height: 0.25rem;
-}
-
-.h-5 {
-  height: 1.25rem;
 }
 
 .min-h-max {
   min-height: -webkit-max-content;
   min-height: max-content;
-}
-
-.min-h-screen {
-  min-height: 100vh;
 }
 
 .min-h-fit {
@@ -615,62 +498,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   min-height: fit-content;
 }
 
-.w-64 {
-  width: 16rem;
-}
-
-.w-full {
-  width: 100%;
-}
-
-.w-screen {
-  width: 100vw;
-}
-
-.w-\[100vw\] {
-  width: 100vw;
-}
-
-.w-4\/5 {
-  width: 80%;
-}
-
-.w-3\/5 {
-  width: 60%;
-}
-
-.w-4\/6 {
-  width: 66.666667%;
-}
-
-.w-2\/6 {
-  width: 33.333333%;
-}
-
-.w-3\/6 {
-  width: 50%;
-}
-
-.w-5\/6 {
-  width: 83.333333%;
-}
-
-.w-1 {
-  width: 0.25rem;
-}
-
-.w-10\/12 {
-  width: 83.333333%;
-}
-
-.w-11\/12 {
-  width: 91.666667%;
-}
-
-.max-w-fit {
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
+.w-9\/12 {
+  width: 75%;
 }
 
 .max-w-min {
@@ -678,33 +507,45 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: min-content;
 }
 
-.shrink {
-  flex-shrink: 1;
-}
-
-.grow {
-  flex-grow: 1;
-}
-
-@-webkit-keyframes ping {
-  75%, 100% {
-    -webkit-transform: scale(2);
-            transform: scale(2);
+@-webkit-keyframes moveInLeft {
+  0% {
     opacity: 0;
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+
+  100% {
+    -webkit-transform: rotate(-3deg);
+            transform: rotate(-3deg);
   }
 }
 
-@keyframes ping {
-  75%, 100% {
-    -webkit-transform: scale(2);
-            transform: scale(2);
+@keyframes moveInLeft {
+  0% {
     opacity: 0;
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+
+  100% {
+    -webkit-transform: rotate(-3deg);
+            transform: rotate(-3deg);
   }
 }
 
-.animate-ping {
-  -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
-          animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+.animate-moveInLeft {
+  -webkit-animation: moveInLeft 1s ease-in-out;
+          animation: moveInLeft 1s ease-in-out;
 }
 
 .flex-row {
@@ -719,20 +560,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   align-items: flex-start;
 }
 
-.items-center {
-  align-items: center;
-}
-
 .justify-between {
   justify-content: space-between;
-}
-
-.justify-around {
-  justify-content: space-around;
-}
-
-.justify-evenly {
-  justify-content: space-evenly;
 }
 
 .self-end {
@@ -743,97 +572,32 @@ Ensure the default browser behavior of the `hidden` attribute.
   align-self: center;
 }
 
-.justify-self-end {
-  justify-self: end;
-}
-
-.bg-stone-900 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(28 25 23 / var(--tw-bg-opacity));
-}
-
-.bg-emerald-800 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(6 95 70 / var(--tw-bg-opacity));
-}
-
-.bg-slate-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
-}
-
 .bg-neutral-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(212 212 212 / var(--tw-bg-opacity));
 }
 
-.bg-slate-900 {
+.bg-zinc-900 {
   --tw-bg-opacity: 1;
-  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
-}
-
-.bg-violet-800 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(91 33 182 / var(--tw-bg-opacity));
-}
-
-.p-1 {
-  padding: 0.25rem;
-}
-
-.p-5 {
-  padding: 1.25rem;
-}
-
-.p-2 {
-  padding: 0.5rem;
-}
-
-.p-3 {
-  padding: 0.75rem;
+  background-color: rgb(24 24 27 / var(--tw-bg-opacity));
 }
 
 .p-6 {
   padding: 1.5rem;
 }
 
-.p-7 {
-  padding: 1.75rem;
-}
-
-.px-7 {
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
-}
-
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
-.px-9 {
-  padding-left: 2.25rem;
-  padding-right: 2.25rem;
-}
-
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
-
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+.p-5 {
+  padding: 1.25rem;
 }
 
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .pb-9 {
@@ -844,48 +608,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-align: left;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
-}
-
-.text-8xl {
-  font-size: 6rem;
-  line-height: 1;
-}
-
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.font-bold {
-  font-weight: 700;
-}
-
-.text-slate-200 {
-  --tw-text-opacity: 1;
-  color: rgb(226 232 240 / var(--tw-text-opacity));
 }
 
 .text-gray-800 {
@@ -893,78 +618,29 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 
-.text-slate-300 {
-  --tw-text-opacity: 1;
-  color: rgb(203 213 225 / var(--tw-text-opacity));
-}
-
-.text-violet-800 {
-  --tw-text-opacity: 1;
-  color: rgb(91 33 182 / var(--tw-text-opacity));
-}
-
-.text-violet-600 {
-  --tw-text-opacity: 1;
-  color: rgb(124 58 237 / var(--tw-text-opacity));
-}
-
-.text-violet-500 {
-  --tw-text-opacity: 1;
-  color: rgb(139 92 246 / var(--tw-text-opacity));
-}
-
 .text-violet-400 {
   --tw-text-opacity: 1;
   color: rgb(167 139 250 / var(--tw-text-opacity));
 }
 
-.underline {
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+.text-slate-200 {
+  --tw-text-opacity: 1;
+  color: rgb(226 232 240 / var(--tw-text-opacity));
 }
 
 @media (min-width: 640px) {
-  .sm\:flex-row {
-    flex-direction: row;
-  }
-
-  .sm\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
-  }
-
-  .sm\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
-  }
-
-  .sm\:text-8xl {
-    font-size: 6rem;
-    line-height: 1;
-  }
-
   .sm\:text-7xl {
     font-size: 4.5rem;
     line-height: 1;
   }
 
-  .sm\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
-  .sm\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
+  .sm\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 
   .sm\:text-xl {
     font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
-  .sm\:text-lg {
-    font-size: 1.125rem;
     line-height: 1.75rem;
   }
 }
@@ -974,10 +650,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     order: 3;
   }
 
-  .md\:mb-10 {
-    margin-bottom: 2.5rem;
-  }
-
   .md\:mb-20 {
     margin-bottom: 5rem;
   }
@@ -985,23 +657,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   .md\:flex-row {
     flex-direction: row;
   }
-
-  .md\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
-  }
-
-  .md\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
-  }
 }
 
 @media (min-width: 1024px) {
-  .lg\:flex-row {
-    flex-direction: row;
-  }
-
   .lg\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;

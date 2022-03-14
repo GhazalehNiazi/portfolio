@@ -5,7 +5,7 @@ function Navbar() {
     <div className="bg-neutral-300 text-gray-800 min-h-max p-5 flex flex-row justify-between">
       <ul className="flex flex-row justify-between ">
         <li className="mx-1 ">
-          <a>Ghazale Niazi</a>
+          <a >Ghazale Niazi</a>
         </li>
         {/* <li><a></a></li>*/}
         <li>
@@ -13,8 +13,8 @@ function Navbar() {
         </li>
       </ul>
       <ul className="flex flex-row">
-        <li>
-          <a>Projects,</a>
+        <li >
+          <a >Projects,</a>
         </li>
         <li>
           <a>About,</a>

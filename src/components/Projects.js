@@ -4,8 +4,8 @@ import Project from "./Project";
 import project2 from "../assests/project2-tumbnail.png";
 function Projects() {
   return (
-    <div className="bg-slate-900 p-5  text-slate-200">
-      <h1 className="text-5xl pb-9 ">selected Projects</h1>
+    <div className="bg-zinc-900 p-5  text-slate-200">
+      <h1 className="text-3xl sm:text-5xl pb-2 sm:py-8  flex justify-center ">selected Projects</h1>
       <div>
         <Project
           img={project1}
